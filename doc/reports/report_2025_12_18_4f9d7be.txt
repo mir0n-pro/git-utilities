@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------
+Release notes: from HEAD~1 till HEAD
+--------------------------------------------------------------------------
+Top Commit: 4f9d7be
+Notes from: doc/release_notes.txt
+12/18/2025 git-utilities
+   - make it public
+--------------------------------------------------------------------------
+Branch : git-utilities/develop
+--------------------------------------------------------------------------
+Code changes:
+--------------------------------------------------------------------------
+Changes from: pre-commit/chisel/chisel/changes.txt
+
+12/18/2025 v1.0.2 Make it public
+ - File heading
+--------------------------------------------------------------------------
+Changes from: pre-commit/doc/changes.txt
+--------------------------------------------------------------------------
+
+-- 2025-12-18 | commit: 4f9d7be | mir0n.the.programmer | Update README.md --
+A   README.md
+M   doc/release_notes.txt
+M   git-gen-rep/README.md
+M   pre-commit/README.md
+A   pre-commit/chisel/chisel/changes.txt
+M   pre-commit/chisel/chisel/chisel.cpp
+ 6 files changed, 97 insertions(+), 57 deletions(-)
