@@ -1,0 +1,7 @@
+GitUtilities things planned to do:
+
+pre-commit:
+: allow long author and file names with spaces, like "Vasiliy Pupkin", "funny names.text"
+: chisel do not trim all trailing empty lines: only last one (except plsql mode)
+report_gen_tag:
+: allow work with fresh new repository: as it now, it requires to have at least 3 commits.

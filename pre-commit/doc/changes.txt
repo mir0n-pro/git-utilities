@@ -1,0 +1,8 @@
+
+05/31/2025 chisel v1.0.3
+chisel
+  - (plsql) "show errors" to remove from code
+  - (plsql) remove all trailing CRs not just last : works for oracle, good enough for now
+  - "it eats its own tail"" changes the p4 keywords in the code :)
+     use other way to declare p4 keyword string constants
+  - process p4 tags in VIEWS (p4 keywords can be placed in the footer instead of the header)

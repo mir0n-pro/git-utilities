@@ -1,0 +1,13 @@
+Git Utilities release notes
+
+
+05/31/2025 chisel v1.0.2
+   - "eating own tail" issue (P4 keyword constants declaration)
+   - fixes in -oracle mode:
+      support p4 for views
+      "show error(s)" to remove
+      trailing EOL issue
+
+03/20/2025 Initial release
+pre-commit : Initial v1.0.0
+report_gen_tag: Moved from messaging.doc to a more suitable location.
