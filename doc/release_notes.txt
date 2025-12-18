@@ -1,5 +1,7 @@
 Git Utilities release notes
 
+12/18/2025 git-utilities
+   - make it public
 
 05/31/2025 chisel v1.0.2
    - "eating own tail" issue (P4 keyword constants declaration)

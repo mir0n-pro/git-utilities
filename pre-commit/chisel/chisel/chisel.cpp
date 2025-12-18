@@ -1,12 +1,13 @@
 //-----------------------------------------------
-// $System: Tradu CFD-SB Trading System $
-// $File: pre-commit/chisel/chisel.cpp $
-// $Date: 2025/03/20 $
-// $Revision: #1 $
-// $Author: mir0n $
+// $System: $
+// $File: pre-commit/chisel/chisel/chisel.cpp $
+// $Date: 2025/12/18 $
+// $Revision: #2 $
+// $Author: mir0n-pro $
 //-----------------------------------------------
 // History:
 //
+// 12.18.2025  mir0n  Make it public
 // 03.20.2025  mir0n  Created
 // 05.31.2025  mir0n  (plsql) "show errors" to remove from code
 //                    (plsql) remove all trailing CRs not just last : works for oracle, good enough for now
@@ -353,13 +354,13 @@ void _printUsage_(bool oracle, bool p4 ) {
     if (p4) {
         cout << "\n";
         cout << "Supported perforce keywords:\n";
-        cout <<  "     - $Id: pre-commit/chisel/chisel.cpp#1 $ File name and revision number. $Id: path/file.txt#3 $\n";
-        cout <<  "     - $Header$ Synonymous with $Id: pre-commit/chisel/chisel.cpp#1 $. $Header: path/file.txt#3 $\n";
-        cout <<  "     - $Date: 2025/03/20 $ Date in format YYYY/MM/DD. $Date: 2010/08/18 $\n";
-        cout <<  "     - $DateTime: 2025/03/20 21:46:49 $ Date and time in format YYYY/MM/DDhh:mm:ss. $DateTime: 2010/08/18 23:17:02 $\n";
-        cout <<  "     - $File: pre-commit/chisel/chisel.cpp $ File name only (without revision number). $File: path/file.txt $\n";
-        cout <<  "     - $Revision: #1 $ File revision number. $Revision: #3 $\n";
-        cout <<  "     - $Author: mir0n $ User commiting the file. $Author: edk $\n";
+        cout <<  "     - $Id: pre-commit/chisel/chisel/chisel.cpp#2 $ File name and revision number. $Id: path/file.txt#3 $\n";
+        cout <<  "     - $Header$ Synonymous with $Id: pre-commit/chisel/chisel/chisel.cpp#2 $. $Header: path/file.txt#3 $\n";
+        cout <<  "     - $Date: 2025/12/18 $ Date in format YYYY/MM/DD. $Date: 2010/08/18 $\n";
+        cout <<  "     - $DateTime: 2025/12/18 18:07:35 $ Date and time in format YYYY/MM/DDhh:mm:ss. $DateTime: 2010/08/18 23:17:02 $\n";
+        cout <<  "     - $File: pre-commit/chisel/chisel/chisel.cpp $ File name only (without revision number). $File: path/file.txt $\n";
+        cout <<  "     - $Revision: #2 $ File revision number. $Revision: #3 $\n";
+        cout <<  "     - $Author: mir0n-pro $ User commiting the file. $Author: edk $\n";
     }
 
     if (oracle) {
