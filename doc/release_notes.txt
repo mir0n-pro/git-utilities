@@ -1,5 +1,7 @@
 Git Utilities release notes
 
+05/03/2026 git_gen_rep: .md output format
+
 12/18/2025 git-utilities
    - make it public
 
