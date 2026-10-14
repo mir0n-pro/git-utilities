@@ -11,12 +11,13 @@ mkdir -p doc/reports/
 last_commit_hash=$(git log $tag...$till --no-merges --format="%h" | head -n 1)
 output_file="doc/reports/report_${current_date}_${last_commit_hash}.md"
 
-first_commit_hash=$(git log $tag~1...$tag --no-merges --format="%h" | head -n 1)
+# xxx: no $tag~1 anywhere -- the first commit of a repository has no parent
+first_commit_hash=$(git rev-parse --short $tag)
 
 release_notes_txt_paths=($(git diff $tag $till --name-only | grep -E -i "release_notes.txt|ReleaseNotes.txt"))
-commit_hashes=($(git log $first_commit_hash~1...$last_commit_hash --no-merges --format="%h"))
-changes_txt_paths=($(git diff $first_commit_hash~1...$last_commit_hash --name-only | grep "changes.txt"))
-release_notes_txt_paths=($(git diff $first_commit_hash~1...$last_commit_hash --name-only | grep -E -i "release_notes.txt|ReleaseNotes.txt"))
+commit_hashes=($(git log $tag...$till --no-merges --format="%h"))
+commit_hashes+=("$first_commit_hash")
+changes_txt_paths=($(git diff $tag $till --name-only | grep "changes.txt"))
 
 # Header
 echo "# Release Report: $tag → $till" >  $output_file
@@ -106,6 +107,11 @@ if [ $j -lt ${#commit_hashes[@]} ]; then
     echo "---" >> $output_file
     echo "" >> $output_file
     echo "*From \`$tag\` till \`$till\`*" >> $output_file
+fi
+
+# xxx: write CRLF when git converts on checkout, or "git add" warns that LF will be replaced
+if [ "$(git config --get core.autocrlf)" = "true" ]; then
+    sed -i 's/\r*$/\r/' "$output_file"
 fi
 
 # Display the final report

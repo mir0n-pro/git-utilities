@@ -1,5 +1,9 @@
 Git Utilities release notes
 
+10/14/2026 git_gen_rep
+   - works on a new repository: the range may start at the first commit
+   - the report is written with CRLF line endings when git is set to convert them (core.autocrlf=true)
+
 05/03/2026 git_gen_rep: .md output format
 
 12/18/2025 git-utilities
